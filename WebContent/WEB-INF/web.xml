@@ -1,0 +1,35 @@
+<web-app 
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0" metadata-complete="true">
+	<servlet>
+		<servlet-name>ontquery</servlet-name>
+		<servlet-class>com.elearning.web.TestInputClass</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ontquery</servlet-name>
+		<url-pattern>/OntologyQuery</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>annoservlet</servlet-name>
+		<servlet-class>com.elearning.web.AnnotationClass</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>annoservlet</servlet-name>
+		<url-pattern>/Annotation</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	    <servlet-name>anno_search_servlet</servlet-name>
+	    <servlet-class>com.elearning.web.AnnotationSearchClass</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>anno_search_servlet</servlet-name>
+	    <url-pattern>/AnnotationQuery</url-pattern>
+	</servlet-mapping>
+</web-app>
